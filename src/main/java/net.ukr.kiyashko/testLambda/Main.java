@@ -1,8 +1,8 @@
 package net.ukr.kiyashko.testLambda;
 
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.stream.Stream;
 
 public class Main {
@@ -17,7 +17,7 @@ public class Main {
         }
         Arrays.sort(arrays, (o1, o2) -> o2.compareTo(o1));
         System.out.println(Arrays.toString(arrays));
-        String [] strings= {"vas","is","das","yo"};
+        String [] strings= {"vas","is","das","yo","yoyoyoy","fudyfy"};
         System.out.println(Arrays.toString(strings));
         Stream<String> streamFromStrigs = Arrays.stream(strings);
         streamFromStrigs.sorted();
